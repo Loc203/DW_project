@@ -61,8 +61,8 @@ public class SendEmail {
     }
 
     public static void main(String[] args) {
-        SendEmail sendEmail = new SendEmail();
-        sendEmail.sendMail("tranlocmom@gmail.com", "hahaha");
+//        SendEmail sendEmail = new SendEmail();
+//        sendEmail.sendMail("tranlocmom@gmail.com", "hahaha");
     }
 
 }

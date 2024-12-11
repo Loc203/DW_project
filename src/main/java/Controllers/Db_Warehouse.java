@@ -77,7 +77,7 @@ public class Db_Warehouse {
                 "    sale_price, \n" +
                 "    images, \n" +
                 "    video_url_description\n" +
-                "FROM kyma_camera_dw1;";
+                "FROM kyma_camera_dw;";
 
         try (Connection connection = jdbcConection.getConnection();
              PreparedStatement dropStmt = connection.prepareStatement(queryDrop);
