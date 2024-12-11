@@ -55,7 +55,8 @@ public class Db_Warehouse {
                 "    actual_price double, \n" +
                 "    sale_price double, \n" +
                 "    images TEXT, \n" +
-                "    video_url TEXT\n" +
+                "    video_url_description TEXT,\n" +
+                "    date_sk BIGINT \n" +
                 ");";
 
         String queryInsert = "INSERT INTO aggregate_filter_cameras (\n" +
@@ -66,7 +67,8 @@ public class Db_Warehouse {
                 "    actual_price, \n" +
                 "    sale_price, \n" +
                 "    images, \n" +
-                "    video_url\n" +
+                "    video_url_description,\n" +
+                "    date_sk \n" +
                 ")\n" +
                 "SELECT \n" +
                 "    sk, \n" +
@@ -76,7 +78,8 @@ public class Db_Warehouse {
                 "    actual_price, \n" +
                 "    sale_price, \n" +
                 "    images, \n" +
-                "    video_url_description\n" +
+                "    video_url_description,\n" +
+                "    date_sk \n" +
                 "FROM kyma_camera_dw;";
 
         try (Connection connection = jdbcConection.getConnection();
